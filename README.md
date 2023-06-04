@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Output
+<img width="1280" alt="Screenshot 2023-06-04 163252" src="https://github.com/imaam786/Fullstack-Assignment-Hackthon/assets/58385239/e8ef76a9-3ca6-4102-975c-d23ebf1338ad">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Steps
+To run the train search web application, follow these steps:
 
-## Available Scripts
+1. Make sure you have Node.js installed on your machine. You can download it from the official Node.js website: https://nodejs.org
 
-In the project directory, you can run:
+2. Open a terminal or command prompt and navigate to the root directory of your train search project.
 
-### `npm start`
+3. Install the required dependencies by running the following command:
+```
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Start the backend server. In the terminal, run the following command:
+```
+node server.js
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Open a new terminal or command prompt and navigate to the root directory of your train search project.
 
-### `npm test`
+6. Start the frontend development server. In the terminal, run the following command:
+```
+npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. The web application should now be running. Open your web browser and access the application at `http://localhost:3000`.
 
-### `npm run build`
+8. You can now use the train search web application to select source and destination stations, search for available trains, and view the list of trains. You can also sort the list of trains based on price and timings.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Remember to ensure that your MongoDB database is running and accessible for the train data to be fetched and populated in the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Steps for MongoDB
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run MongoDB database, follow these steps:
 
-### `npm run eject`
+1. Download MongoDB Community Server from the official MongoDB website: https://www.mongodb.com/try/download/community
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install MongoDB on your machine by following the installation instructions specific to your operating system.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Once MongoDB is installed, open a terminal or command prompt.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Create a directory where MongoDB will store its data. For example, you can create a directory called "data" in your home directory:
+```
+mkdir ~/data
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Start the MongoDB server by running the following command. Replace `<path-to-mongodb>` with the path where MongoDB is installed on your machine. For example, on macOS, the default installation path is `/usr/local/bin`:
+```
+<path-to-mongodb>/mongod --dbpath ~/data
+```
 
-## Learn More
+6. MongoDB will start running, and you will see log messages indicating the server status. By default, MongoDB runs on port 27017.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+7. Keep the terminal or command prompt running with the MongoDB server process.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+8. You can now connect to the MongoDB database using a MongoDB client or your application.
+```
+(mongodb://localhost:27017/train-search-db)
+```
 
-### Code Splitting
+Note: If you want to use MongoDB Atlas, a cloud-based MongoDB service, you can sign up for an account at https://www.mongodb.com/cloud/atlas. MongoDB Atlas provides an easy way to set up and manage MongoDB databases without requiring manual installation and configuration on your machine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Make sure to update your application's configuration or connection code to connect to the running MongoDB server.
